@@ -98,6 +98,29 @@ main, section, footer {
     padding: 20px;
 }
 
+#main-grid {
+    display: grid;
+    grid-template-areas:
+        "g1 g2";
+    grid-template-columns:1fr 1fr;
+    grid-row-gap: 5px;
+}
+
+#main-grid img {
+    grid-area: g1;
+    width: 600px;
+    height: 400px;
+
+}
+
+#facts {
+    grid-area: g2;
+    align-content: center;
+    line-height: 35px;
+    font-size: large;
+}
+
+
 .store-button { /* used for store link in "Get refreshed" section */
     width: 25%;
     padding: 10px;
@@ -108,3 +131,5 @@ main, section, footer {
     text-align: center;
     text-transform: uppercase;
 }
+
+
